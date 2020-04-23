@@ -1,0 +1,316 @@
+server:
+  port: 3000
+  basePath: ''
+application:
+  domain: juice-sh.op
+  name: 'The Furniture Shop'
+  logo: ''
+  favicon: favicon_js.ico
+  theme: blue-lightblue # Options: bluegrey-lightgreen blue-lightblue deeppurple-amber indigo-pink pink-bluegrey purple-green deeporange-indigo
+  showVersionNumber: false
+  showGitHubLinks: false
+  numberOfRandomFakeUsers: 0
+  altcoinName: Juicycoin
+  privacyContactEmail: donotreply@FurnitureShop
+  customMetricsPrefix: juiceshop
+  social:
+    twitterUrl: 'https://twitter.com/owasp_juiceshop'
+    facebookUrl: 'https://www.facebook.com/owasp.juiceshop'
+    slackUrl: 'http://owaspslack.com'
+    redditUrl: 'https://www.reddit.com/r/owasp_juiceshop'
+    pressKitUrl: 'https://github.com/OWASP/owasp-swag/tree/master/projects/juice-shop'
+    questionnaireUrl: 'https://forms.gle/2Tr5m1pqnnesApxN8'
+  recyclePage:
+    topProductImage: fruit_press.jpg
+    bottomProductImage: apple_pressings.jpg
+  welcomeBanner:
+    showOnFirstStart: true
+    title: 'Welcome to the Furniture Shop!'
+    message: "<p>Being a web application with a vast number of intended security vulnerabilities, the <strong>OWASP Juice Shop</strong> is supposed to be the opposite of a best practice or template application for web developers: It is an awareness, training, demonstration and exercise tool for security risks in modern web applications. The <strong>OWASP Juice Shop</strong> is an open-source project hosted by the non-profit <a href='https://owasp.org' target='_blank'>Open Web Application Security Project (OWASP)</a> and is developed and maintained by volunteers. Check out the link below for more information and documentation on the project.</p><h1><a href='https://owasp-juice.shop' target='_blank'>https://owasp-juice.shop</a></h1>"
+  cookieConsent:
+    backgroundColor: '#546e7a'
+    textColor: '#ffffff'
+    buttonColor: '#558b2f'
+    buttonTextColor: '#ffffff'
+    message: 'This website uses fruit cookies to ensure you get the juiciest tracking experience.'
+    dismissText: 'Me want it!'
+    linkText: 'But me wait!'
+    linkUrl: 'https://www.youtube.com/watch?v=9PnbKL3wuH4'
+  securityTxt:
+    contact: 'mailto:donotreply@owasp-juice.shop'
+    encryption: 'https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda'
+    acknowledgements: '/#/score-board'
+  promotion:
+    video: JuiceShopJingle.mp4
+    subtitles: JuiceShopJingle.vtt
+  easterEggPlanet:
+    name: Orangeuze
+    overlayMap: orangemap2k.jpg
+  googleOauth:
+    clientId: '1005568560502-6hm16lef8oh46hr2d98vf2ohlnj4nfhq.apps.googleusercontent.com'
+    authorizedRedirects:
+      - { uri: 'https://demo.owasp-juice.shop' }
+      - { uri: 'http://demo.owasp-juice.shop' }
+      - { uri: 'https://juice-shop.herokuapp.com' }
+      - { uri: 'http://juice-shop.herokuapp.com' }
+      - { uri: 'https://preview.owasp-juice.shop' }
+      - { uri: 'http://preview.owasp-juice.shop' }
+      - { uri: 'https://juice-shop-staging.herokuapp.com' }
+      - { uri: 'http://juice-shop-staging.herokuapp.com' }
+      - { uri: 'http://juice-shop.wtf' }
+      - { uri: 'http://localhost:3000', proxy: 'http://local3000.owasp-juice.shop' }
+      - { uri: 'http://127.0.0.1:3000', proxy: 'http://local3000.owasp-juice.shop' }
+      - { uri: 'http://localhost:4200', proxy: 'http://local4200.owasp-juice.shop' }
+      - { uri: 'http://127.0.0.1:4200', proxy: 'http://local4200.owasp-juice.shop' }
+      - { uri: 'http://192.168.99.100:3000', proxy: 'http://localmac.owasp-juice.shop' }
+      - { uri: 'http://penguin.termina.linux.test:3000', proxy: 'http://localchromeos.owasp-juice.shop' }
+challenges:
+  showSolvedNotifications: true
+  showHints: true
+  overwriteUrlForProductTamperingChallenge: 'https://owasp.slack.com'
+  xssBonusPayload: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/771984076&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>'
+  safetyOverride: false
+hackingInstructor:
+  isEnabled: true
+  avatarImage: juicyBot.png
+products:
+  -
+    name: 'Billy'
+    price: 39.95
+    deluxePrice: 29.95
+    description: 'The all-time classic.'
+    image: 'billy.jpg'
+    reviews:
+      - { text: 'One of my favorites!', author: admin }
+  -
+    name: 'Äpplarö'
+    description: 'Nice and easy for sitting outside'
+    price: 39.99
+    deluxePrice: 39.49
+    image: äpplarö.JPG
+  -
+    name: 'Äpplarö'
+    description: 'Even better for sitting outside'
+    price: 34.99
+    image: äpplaröbench.JPG
+    reviews:
+      - { text: 'I bought it, would buy again. 9/10', author: admin }
+  -
+    name: 'Besta'
+    description: 'Perfect for every 90 inch tv'
+    price: 39.99
+    image: besta.JPG
+  -
+    name: 'Besynnerlig'
+    description: 'In case you ever needed a monkey to hold your candle'
+    price: 2.99
+    deluxePrice: 1.99
+    image: besynnerlig.JPG
+  -
+    name: 'Blabärsmott'
+    description: 'Goes incredibly well with the couch'
+    price: 9.99
+    image: blabärsmott.JPG
+    reviews:
+      - { text: 'Lovely. Just lovely', author: bender }
+  -
+    name: 'Böja'
+    description: 'Made from recycled wood'
+    price: 4.99
+    image: böja.JPG
+  -
+    name: 'Daim chocolate pie'
+    description: 'Best pie out there'
+    price: 3.49
+    image: daim.JPG
+  -
+    name: 'Djungelskog'
+    description: 'Both cute and scary at the same time'
+    price: 4.99
+    image: djungelskog.JPG
+    urlForProductTamperingChallenge: 'https://www.owasp.org/index.php/O-Saft'
+  -
+    name: 'Ekenäset'
+    description: 'The chair that lasts for centuries'
+    price: 29.99
+    image: ekenäset.JPG
+    useForChristmasSpecialChallenge: true
+  -
+    name: 'Ekoln'
+    description: 'Perfect for all kinds of liquids <br/><span style="color:red;">This item has been made unavailable because of lack of safety standards.</span>'
+    price: 4.99
+    image: ekoln.JPG
+    keywordsForPastebinDataLeakChallenge:
+      - hueteroneel
+      - eurogium edule
+  -
+    name: 'Ektorp'
+    description: 'Lovely couch. By now this is a rare collectors item. <em>Out of stock!</em>'
+    price: 999.99
+    image: ektorp.JPG
+    deletedDate: '2017-04-28'
+  -
+    name: 'Frakta'
+    description: 'The bag that keeps all your chocolate pies cool'
+    price: 5.99
+    image: frakta.JPG
+  -
+    name: 'Fredön'
+    description: 'Even greater and better for being outside'
+    price: 39.99
+    image: fredön.JPG
+  -
+    name: 'Hattefjäll'
+    description: 'A great office chair'
+    price: 59.99
+    image: hattefjäll.JPG
+  -
+    name: 'Hemnes'
+    description: 'The perfect nightstand for everyone'
+    price: 4.99
+    image: hemnes.JPG
+  -
+    name: 'Jättene'
+    description: 'From all the moving boxes, this one is the best'
+    price: 2.99
+    image: jättene.JPG
+    reviews:
+      - { text: 'I haved tried several different moving boxes before finally settling on this one. Perfect!', author: rapper }
+  -
+    name: 'Symfonisk'
+    description: 'Lamp and speaker in one! What else do you want in life?'
+    price: 21.99
+    image: symfonisk.JPG
+  -
+    name: 'Borstad'
+    description: 'Nothing feels more like spring than ferociously slapping your rug outside with this Borstad'
+    price: 10.99
+    image: borstad.JPG
+  -
+    name: 'Världens'
+    description: 'Yes! We also sell backpacks'
+    price: 19.99
+    quantity: 5
+    image: världens.JPG
+    reviews:
+      - { text: 'Seems impossibly endless', author: rapper }
+      - { text: 'Too bad I had to put this bag together myself as well', author: jim }
+  -
+    name: 'Gunde'
+    description: 'It is impossible to be unable to set this chair up'
+    price: 6.99
+    image: gunde.JPG
+  -
+    name: 'Pello'
+    description: 'The chair that has been popular everywhere for milennia!'
+    price: 49.99
+    image: pello.JPG
+    reviews:
+      - { text: 'Impossible to hate!', author: jim }
+  -
+    name: 'Karmsund'
+    description: 'For every moment of self appreciation'
+    price: 20.99
+    image: karmsund.JPG
+  -
+    name: 'Kex'
+    description: 'Delicious cookies. Can be <a href="/#recycle">sent back to us</a> for recycling.'
+    price: 1.89
+    image: kex.JPG
+  -
+    name: 'Solvinden'
+    description: 'Sets the perfect atmoshpere for those early spring evenings.'
+    price: 11.95
+    image: solvinden.JPG
+  -
+    name: 'Lagan'
+    description: 'Great stove! Note: does not substitute poor cooking skills'
+    price: 99.99
+    image: lagan.JPG # Exif metadata contains "OpenSCAD" as subtle hint...
+    fileForRetrieveBlueprintChallenge: JuiceShop.stl # ...to blueprint file type
+  -
+    name: 'Linnmon'
+    description: 'Excellent affordable desk'
+    price: 278.74
+    quantity: 1
+    image: linnmon.JPG
+  -
+    name: 'Markus'
+    description: 'C-suite office chair'
+    price: 99.00
+    image: markus.JPG
+    deletedDate: '2017-07-01'
+  -
+    name: 'Pax'
+    description: 'Famous in every corner of the world. Fully customizable!'
+    price: 99.99
+    image: pax.JPG
+  -
+    name: 'Skarsta'
+    description: 'With this desk you can procrastinate both standing or sitting!'
+    price: 149.99
+    image: skarsta.JPG
+  -
+    name: 'Skymmingen'
+    description: 'As opposed to what it looks like, this does not generate wind energy'
+    price: 19.1
+    image: skymningen.JPG
+    deletedDate: '2017-09-20'
+  -
+    name: 'Tärnö'
+    description: 'Easy to set up'
+    price: 10.99
+    image: tärnö.JPG
+    reviews:
+      - { text: 'Sweet and simple, I love it!', author: morty }
+  -
+    name: 'Toftbo'
+    description: 'Keeps your feet warm in the bathroom'
+    price: 2.99
+    quantity: 3
+    image: toftbo.JPG
+  -
+    name: 'Tosterö'
+    description: 'Every barbecue fits in this'
+    price: 19.99
+    quantity: 0
+    image: tosterö.JPG
+  -
+    name: 'Tuffing'
+    description: 'Very safe bunkbed'
+    price: 99.99
+    quantity: 8
+    image: tuffing.JPG
+    reviews:
+      - { text: 'My kid fell down all the bunkbeds we had before. But not this one! Bobby is finally safe.', author: bjoernOwasp }
+  -
+    name: 'Vimle'
+    description: 'Fits nicely in every student bed room in the city centre of Amsterdam'
+    price: 999.99
+    quantity: 0
+    image: vimle.JPG
+    reviews:
+      - { text: "I had to throw everything out, but now it easily fits in my five square metres room!", author: rapper }
+  -
+    name: 'Metod'
+    description: "The fully customizable kitchen closet"
+    price: 99.00
+    quantity: 0
+    image: metod.JPG
+    reviews:
+      - { text: "My whole kitchen is Metod!", author: rapper }
+      - { text: "I have spent six hours customizing it and it's exactly how I want it", author: jim }
+      - { text: "Yes, this is indeed a closet", author: bender }
+memories:
+  -
+    image: 'magn(et)ificent!-1571814229653.jpg'
+    caption: 'Magn(et)ificent!'
+    user: bjoernGoogle
+  -
+    image: 'my-rare-collectors-item!-[̲̅$̲̅(̲̅-͡°-͜ʖ-͡°̲̅)̲̅$̲̅]-1572603645543.jpg'
+    caption: 'My rare collectors item! [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]'
+    user: bjoernGoogle
+ctf:
+  showFlagsInNotifications: false
+  showCountryDetailsInNotifications: none # Options: none  name  flag  both
+  countryMapping: ~
